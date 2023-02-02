@@ -16,7 +16,7 @@ const Edit = ({
     e.preventDefault();
 
     const editData = async () => {
-      await fetch("http://localhost:5000/api/v1/data", {
+      await fetch("https://fuhuahu-simple-backend.onrender.com", {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const Show = ({
   setEditArticle,
 }) => {
   const handleDelete = async (article) => {
-    await fetch("http://localhost:5000/api/v1/data", {
+    await fetch("https://fuhuahu-simple-backend.onrender.com", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
