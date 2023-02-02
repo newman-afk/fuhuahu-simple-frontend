@@ -12,7 +12,7 @@ const Show = ({
 }) => {
   const handleDelete = async (article) => {
     await fetch("http://localhost:5000/api/v1/data", {
-      method: "DELETE",
+      method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },

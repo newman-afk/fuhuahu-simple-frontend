@@ -17,6 +17,10 @@ function App() {
   }, []);
   return (
     <>
+      <p>如遇删除无效，请刷新。</p>
+      <p>
+        PS:大概是async方法引起的，在删除前执行了重新获取数据的代码，如有建议可以Add至下方。
+      </p>
       {!isEdit && <Add setData={setData} />}
       {isEdit && (
         <Edit
