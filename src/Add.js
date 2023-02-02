@@ -10,7 +10,7 @@ const Add = ({ setData }) => {
     e.preventDefault();
 
     const postData = async () => {
-      await fetch("https://fuhuahu-simple-backend.onrender.com", {
+      await fetch("https://fuhuahu-simple-backend.onrender.com/api/v1/data/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
